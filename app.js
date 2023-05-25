@@ -3,7 +3,7 @@ const sec = document.querySelector(".sec");
 const startBtn = document.querySelector(".start");
 const stopBtn = document.querySelector(".stop");
 const bGround = document.querySelector(".container");
-
+const title = document.querySelector(".title");
 let m = 25;
 let s = 0;
 let timer;
@@ -32,6 +32,7 @@ const Start = () => {
 
     min.innerHTML = timeToString(m);
     sec.innerHTML = timeToString(s);
+    title.innerHTML = `${timeToString(m)}:${timeToString(s)}`;
   }, 1000);
 };
 
